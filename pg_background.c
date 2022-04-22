@@ -955,7 +955,9 @@ execute_sql_string(const char *sql)
 		 * destination.
 		 */
 		commandTag = CreateCommandTag_compat(parsetree);
+#if PG_VERSION_NUM >= 130000
 		set_ps_display_compat(GetCommandTagName(commandTag));
+#endif
 
 		BeginCommand(commandTag, DestNone);
 
