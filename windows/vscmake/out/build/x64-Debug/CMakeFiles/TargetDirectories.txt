@@ -1,0 +1,3 @@
+C:/Users/vmuserw10/source/repos/pg_background/windows/vscmake/out/build/x64-Debug/CMakeFiles/libpg_background.dir
+C:/Users/vmuserw10/source/repos/pg_background/windows/vscmake/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/vmuserw10/source/repos/pg_background/windows/vscmake/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

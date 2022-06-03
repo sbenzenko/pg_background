@@ -1,7 +1,7 @@
 {
   "environments": [
     {
-      "POSTGRESQL_DIR": ""
+      "POSTGRESQL_DIR": "C:\\Program Files\\PostgreSQL\\14"
     }
   ],
   "configurations": [
@@ -53,6 +53,21 @@
     {
       "name": "x64-Release",
       "generator": "Visual Studio 15 2017 Win64",
+      "configurationType": "RelWithDebInfo",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "variables": [
+        {
+          "name": "CMAKE_INSTALL_PREFIX",
+          "value": "${env.POSTGRESQL_DIR}"
+        }
+      ]
+    },
+    {
+      "name": "x64-Release",
+      "generator": "Visual Studio 17 2022",
       "configurationType": "RelWithDebInfo",
       "inheritEnvironments": [ "msvc_x64_x64" ],
       "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
